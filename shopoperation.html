@@ -28,7 +28,7 @@
     <link href="assets/css/fullcalendar/fullcalendar.css" rel="stylesheet">
 
 
-    <title>o2o商铺管理后台 - 商铺注册</title>
+    <title id="page-title"></title>
 
 </head>
 <body>
@@ -73,8 +73,8 @@
                     </a>
                     <ul class="sub-nav">
                         <li><a href="shoplist.html">商铺列表</a></li>
-                        <li class="active"><a href="shopregister.html">商铺注册</a></li>
-                        <li><a href="shopedit.html">商铺编辑</a></li>
+                        <li><a href="shopoperation.html">商铺注册</a></li>
+                        <li class="active"><a href="shopoperation.html">商铺编辑</a></li>
                         <li><a href="fixed-layout.html">商铺注销</a></li>
                         <li><a href="shopcategorymanagement.html" title="Fixed Layout">商品类别管理</a></li>
                     </ul>
@@ -165,15 +165,15 @@
             <div class="row page-tilte align-items-center">
                 <div class="col-md-auto">
                     <a href="#" class="mt-3 d-md-none float-right toggle-controls"><span class="material-icons">keyboard_arrow_down</span></a>
-                    <h1 class="weight-300 h3 title">商铺注册</h1>
-                    <p class="text-muted m-0 desc">请在下面表单中填写商铺信息以方便注册</p>
+                    <h1 class="weight-300 h3 title form-title"></h1>
+                    <p class="text-muted m-0 desc form-des"></p>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-lg-12 mb-4">
                     <div class="card ">
-                        <div class="card-header">注册表单</div>
+                        <div class="card-header form-header"></div>
                         <div class="card-body">
 
                             <div class="form-group">
@@ -222,7 +222,7 @@
                                 </div>
                             </div>
 
-                            <button class="btn btn-primary" id="submit">注册</button>
+                            <button class="btn btn-primary" id="submit"></button>
                         </div>
                     </div>
                 </div>
@@ -352,24 +352,17 @@
 
 <script src="assets/js/chartjs/Chart.js"></script>
 <script src="assets/js/chartjs/utils.js"></script>
-
 <script src="assets/js/lib/moment.min.js"></script>
 <script src="assets/js/lib/jquery.min.js"></script>
 <script src="assets/js/lib/popper.min.js"></script>
 <script src="assets/js/bootstrap/bootstrap.min.js"></script>
 <script src="assets/js/chosen-js/chosen.jquery.js"></script>
 <script src="assets/js/fullcalendar/fullcalendar.js"></script>
-
 <script src="assets/js/daterangepicker/daterangepicker.min.js"></script>
 <script src="assets/js/custom.js"></script>
+
+<script src="assets/js/shop/common.js"></script>
 <script src="assets/js/shop/shopoperation.js"></script>
-
-<script type="text/javascript">
-    function changeVerityCode(img) {
-        img.src = "http://localhost:8080/shopping/Kaptcha?" + Math.floor(Math.random() * 100);
-    }
-</script>
-
 
 </body>
 
